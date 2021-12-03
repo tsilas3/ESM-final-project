@@ -1,13 +1,14 @@
+clear all
 
 dz = 0.1; %depth grid spacing (m)
 zf = 1; % lake depth in meters
 zs = 0:dz:zf; % vector of depths in the lake
 
-dt = 1; % time grid spacing = 1 day
-tf = 3600; % 1 hr
+dt = 86400; % time grid spacing = 1 
+tf = 3600*24*365*3; % 3 years
 ts = 0:dt:tf;
 
-D = dz^2/4*dt; %hard code
+D = 1e-8; %hard coded to something small enough that CD < 0.5
 
 C_D = D*dt/(dz)^2;
 
