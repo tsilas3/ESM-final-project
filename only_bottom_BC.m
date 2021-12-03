@@ -1,3 +1,4 @@
+
 dz = 0.1; %depth grid spacing (m)
 zf = 1; % lake depth in meters
 zs = 0:dz:zf; % vector of depths in the lake
@@ -51,3 +52,8 @@ for k = 1:length(ts)-1
     T_all(:,k+1) = Tnew;
     T = Tnew;
 end
+
+% plot
+
+figure(1);
+plot(zs, T_all(:,length(ts))) % end
