@@ -58,3 +58,6 @@ end
 
 figure(1);
 plot(zs, T_all(:,length(ts))) % end
+title('Temperature profile of the lake at Final Time')
+xlabel('Depth')
+ylabel('Temperature')
