@@ -5,7 +5,7 @@ dz = 0.1; %depth grid spacing (m)
 zf = 1; % lake depth in meters
 zs = 0:dz:zf; % vector of depths in the lake
 
-dt = 86400; % time grid spacing = 1 
+dt = 86400; % time grid spacing = 1 day
 tf = 3600*24*365*3; % 3 years
 ts = 0:dt:tf;
 
