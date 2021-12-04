@@ -32,8 +32,7 @@ for i = 1:length(zs)
     end
 end
 
-M(1,1) = 1-C_D;
-M(1,2) = 0;
+
 M(end,end-1)=C_D;
 M(end,end) = 1-C_D;
 
