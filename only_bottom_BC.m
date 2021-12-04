@@ -1,4 +1,5 @@
 clear all
+close all
 
 dz = 0.1; %depth grid spacing (m)
 zf = 1; % lake depth in meters
@@ -60,4 +61,16 @@ figure(1);
 plot(zs, T_all(:,length(ts))) % end
 title('Temperature profile of the lake at Final Time')
 xlabel('Depth')
-ylabel('Temperature')
+ylabel('Temperature (C)')
+
+figure(2)
+plot(ts/86400/365, T_all(1, :))
+title('temperature profile of the lake surface with time')
+xlabel('Time (year)')
+ylabel('Temperature (C)')
+
+figure(3)
+plot(ts/86400/365, T_all(end, :))
+title('temperature profile of the lake bottom with time')
+xlabel('Time (year)')
+ylabel('Temperature (C)')
