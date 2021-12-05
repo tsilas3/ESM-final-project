@@ -18,7 +18,7 @@ dt = 86400; % time grid spacing = 1 day
 tf = 3600*24*365*3; % 3 years
 ts = 0:dt:tf;
 
-conductivity = 575; % W m^-1 K^-1 - slightly less than the value at 10C
+conductivity = 0.5918; % W m^-1 K^-1 - slightly less than the value at 10C
 
 % Net incoming shortwave radiation:
 
