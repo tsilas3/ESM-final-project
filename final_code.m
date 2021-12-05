@@ -1,9 +1,3 @@
-clear all
-close all
-
-%% Forward Euler Diffusion
-
-% Varying diffusivity stuff
 % Equation caluculated in Google Sheets from values in R. Mills (1973)
 
 kappa_m = @(T_k) (16.4 - 0.151*T_k + 3.48e-4*T_k^2)*1e-9;
@@ -18,7 +12,7 @@ dt = 86400; % time grid spacing = 1 day
 tf = 3600*24*365*3; % 3 years
 ts = 0:dt:tf;
 
-conductivity = 0.5918; % W m^-1 K^-1 - slightly less than the value at 10C
+conductivity = 575; % W m^-1 K^-1 - slightly less than the value at 10C
 
 % Net incoming shortwave radiation:
 
