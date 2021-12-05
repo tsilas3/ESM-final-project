@@ -15,7 +15,7 @@ D = 1e-9; %hard coded to something small enough that CD < 0.5
 
 C_D = D*dt/(dz)^2;
 
-conductivity = 575; % W m^-1 K^-1 - slightly less than the value at 10C
+conductivity = 0.5918; % W m^-1 K^-1 - slightly less than the value at 10C
 
 % Net incoming shortwave radiation:
 
